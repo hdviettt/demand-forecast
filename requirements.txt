@@ -1,0 +1,23 @@
+# One environment for the whole project: classical, machine learning and deep learning.
+#
+# pandas is pinned below 3. The deep-learning forecasting libraries (gluonts,
+# pytorch-forecasting) do not yet support pandas 3, so the project uses a single
+# pandas 2.x environment rather than splitting into two requirement files.
+#
+#   python -m venv .venv
+#   .venv/Scripts/python -m pip install -r requirements.txt
+
+numpy
+pandas<3
+scipy
+matplotlib
+seaborn
+scikit-learn
+statsmodels
+lightgbm
+xgboost
+prophet
+torch
+gluonts
+pytorch-forecasting
+lightning
